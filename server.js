@@ -7,11 +7,11 @@ app.use(express.json());
 
 app.get('/', async (req, res) => {
     try {
-        res.send("Hello from my node app!")
+        res.send("Hello from my node app!");
     }
     catch (error) {
-        res.send('error' + error)
-    }
-})
+        res.send('error' + error);
+    };
+});
 
-app.listen(8080)
+app.listen(8080, "0.0.0.0");
